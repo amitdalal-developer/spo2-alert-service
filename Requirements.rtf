@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 ArialMT;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww20400\viewh11940\viewkind0
+\deftab720
+\pard\pardeftab720\sl276\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 \expnd0\expndtw0\kerning0
+REQ-1 
+\f1\b0 The system shall accept SpO2 readings in the format above for multiple patients.
+\f2\fs24 \
+
+\f0\b\fs37\fsmilli18667 REQ-2 
+\f1\b0 The system shall raise a LOW_SPO2 alert for a patient when SpO2 is below 90% for at least 10 seconds.
+\f2\fs24 \
+
+\f0\b\fs37\fsmilli18667 REQ-3 
+\f1\b0 The system shall clear an active LOW_SPO2 alert when SpO2 is at or above 92% for at least 10 seconds.
+\f2\fs24 \
+
+\f0\b\fs37\fsmilli18667 REQ-4 
+\f1\b0 Readings with quality "poor" shall not raise or clear an alert.
+\f2\fs24 \
+
+\f0\b\fs37\fsmilli18667 REQ-5 
+\f1\b0 If no reading is received for a patient for more than 30 seconds, the system shall raise a SIGNAL_LOSS alert for that patient.
+\f2\fs24 \
+
+\f0\b\fs37\fsmilli18667 REQ-6 
+\f1\b0 The system shall expose the active alerts for a patient (type and start time) through an API, e.g. GET /patients/\{id\}/alerts.
+\f2\fs24 \
+\
+\
+\
+
+\f1\fs37\fsmilli18667 \{"patient_id": "P-001", "ts": 1730480400000, "spo2": 88, "quality": "good"\}
+\f2\fs24 \
+}
